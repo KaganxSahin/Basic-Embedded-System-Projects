@@ -1,5 +1,8 @@
 //STM32CubeIDE Settings
 /*
+Click System Core → Click SYS -->
+Debug: Serial Wire
+
 Pinout & Configuration
 Pinout View
 PC13 --> GPIO Output
