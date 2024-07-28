@@ -1,5 +1,8 @@
 //STM32CubeIDE Settings
 /*
+Click System Core → Click SYS -->
+Debug: Serial Wire
+
 Clock Configuration:
 - External Crystal (8MHz) is used to provide the clock via the PLL.
 - The system is running at 60MHz.
