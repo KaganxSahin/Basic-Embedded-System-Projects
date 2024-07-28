@@ -1,5 +1,8 @@
 //STM32CubeIDE Settings
 /*
+Click System Core → Click SYS -->
+Debug: Serial Wire
+
 Click Timer → Click TIM2 →
 
 Clock Source set to Internal Clock
