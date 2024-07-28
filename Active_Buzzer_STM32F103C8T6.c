@@ -1,8 +1,8 @@
 //STM32CubeIDE Settings
 /*
 Click System Core → Click SYS -->
-
 Debug: Serial Wire
+
 Click GPIO → Configure GPIO_A → GPIO_PIN_1
 
 Mode set to Output
