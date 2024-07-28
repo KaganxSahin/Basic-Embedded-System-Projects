@@ -1,5 +1,8 @@
 //STM32CubeIDE Settings
 /*
+Click System Core → Click SYS -->
+Debug: Serial Wire
+
 ADC1 - IN9 (tick)
 
 Parameter Settings --> ADC Settings --> Continuous Conversion Mode (Enabled)
