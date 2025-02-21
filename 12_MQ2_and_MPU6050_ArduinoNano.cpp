@@ -3,8 +3,8 @@
 - **MQ2 Gas Sensor Wiring**:
   - Connect the `VCC` pin to the `5V` pin of the Arduino Nano.
   - Connect the `GND` pin to the `GND` pin of the Arduino Nano.
-  - Connect the `DO` (Digital Output) pin to any digital pin (e.g., `D2`).
-  - Connect the `AO` (Analog Output) pin to any analog pin (e.g., `A0`).
+  - Connect the `DO` (Digital Output) pin to any digital pin (D2).
+  - Connect the `AO` (Analog Output) pin to any analog pin (A0).
 
 - **MPU6050 Wiring**:
   - Connect the `VCC` pin to the `3.3V` or `5V` pin of the Arduino Nano (MPU6050 supports 5V).
@@ -23,7 +23,7 @@
 Adafruit_MPU6050 mpu;
 
 // MQ2 Gas Sensor Pin Definition
-#define MQ2_ANALOG_PIN A0  // If using digital output, connect to a digital pin (e.g., D2).
+#define MQ2_ANALOG_PIN A0  // If using digital output connect to a digital pin.
 
 void setup() {
   Serial.begin(115200);
