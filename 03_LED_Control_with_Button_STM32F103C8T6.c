@@ -7,24 +7,6 @@ Set PA1 to GPIO_Output
 Set PB1 to GPIO_Input
 */
 
-// Additional code on top of STM32CubeIDE generated code
-/* USER CODE BEGIN WHILE */
-while (1)
-{
-    if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1) == GPIO_PIN_RESET)
-    {
-        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 0);
-    }
-    else
-    {
-        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 1);
-    }
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-}
-/* USER CODE END 3 */
-
 //Wiring
 /*
 - **STM32 Microcontroller**:
@@ -47,3 +29,21 @@ while (1)
 
 These connections allow the push button to control the LED.
 */
+
+// Additional code on top of STM32CubeIDE generated code
+/* USER CODE BEGIN WHILE */
+while (1)
+{
+    if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1) == GPIO_PIN_RESET)
+    {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 0);
+    }
+    else
+    {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 1);
+    }
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+}
+/* USER CODE END 3 */
