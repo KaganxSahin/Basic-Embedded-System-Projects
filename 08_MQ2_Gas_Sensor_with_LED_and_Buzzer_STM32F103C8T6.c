@@ -8,6 +8,23 @@ Configure PB0 pin as GPIO_Output.
 Configure PB1 pin as GPIO_Output.
 */
 
+// Wiring
+/*
+- **MQ-2 Gas Sensor**:
+  - Connect the VCC pin to the 3.3V or 5V pin of the STM32 board.
+  - Connect the GND pin to the GND pin of the STM32 board.
+  - Connect the AOUT (Analog Output) pin to the PA0 pin of the STM32 board.
+
+- **LED**:
+  - Connect the long leg (anode) of the LED to a 220Ω resistor.
+  - Connect the other end of the resistor to the PB0 pin of the STM32 board.
+  - Connect the short leg (cathode) of the LED to the GND pin.
+
+- **Active Buzzer**:
+  - Connect the + pin of the buzzer to the PB1 pin of the STM32 board.
+  - Connect the - pin of the buzzer to the GND pin.
+*/
+
 // Additional code on top of STM32CubeIDE generated code
 #include "main.h"
 
@@ -119,20 +136,3 @@ void Error_Handler(void)
   {
   }
 }
-
-// Wiring
-/*
-- **MQ-2 Gas Sensor**:
-  - Connect the VCC pin to the 3.3V or 5V pin of the STM32 board.
-  - Connect the GND pin to the GND pin of the STM32 board.
-  - Connect the AOUT (Analog Output) pin to the PA0 pin of the STM32 board.
-
-- **LED**:
-  - Connect the long leg (anode) of the LED to a 220Ω resistor.
-  - Connect the other end of the resistor to the PB0 pin of the STM32 board.
-  - Connect the short leg (cathode) of the LED to the GND pin.
-
-- **Active Buzzer**:
-  - Connect the + pin of the buzzer to the PB1 pin of the STM32 board.
-  - Connect the - pin of the buzzer to the GND pin.
-*/
