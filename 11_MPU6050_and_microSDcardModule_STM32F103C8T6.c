@@ -1,3 +1,20 @@
+//Wiring
+/*
+- **MPU6050**:
+  - Connect the `VCC` pin to the `3.3V` pin of the STM32F103C8T6.
+  - Connect the `GND` pin to the `GND` pin of the STM32F103C8T6.
+  - Connect the `SCL` pin to the `B6` pin (I2C Clock) of the STM32F103C8T6.
+  - Connect the `SDA` pin to the `B7` pin (I2C Data) of the STM32F103C8T6.
+
+- **microSD Card**:
+  - Connect the `CS` pin to the `PC13` pin of the STM32F103C8T6.
+  - Connect the `SCK` pin to the `A5` pin of the STM32F103C8T6.
+  - Connect the `MOSI` pin to the `A7` pin of the STM32F103C8T6.
+  - Connect the `MISO` pin to the `A6` pin of the STM32F103C8T6.
+  - Connect the `VCC` pin to the `5V` pin of the STM32F103C8T6.
+  - Connect the `GND` pin to the `GND` pin of the STM32F103C8T6.
+*/
+
 // Arduino IDE Code
 
 #include <Wire.h>
@@ -96,20 +113,3 @@ void loop() {
 
   delay(1000); 
 }
-
-//Wiring
-/*
-- **MPU6050**:
-  - Connect the `VCC` pin to the `3.3V` pin of the STM32F103C8T6.
-  - Connect the `GND` pin to the `GND` pin of the STM32F103C8T6.
-  - Connect the `SCL` pin to the `B6` pin (I2C Clock) of the STM32F103C8T6.
-  - Connect the `SDA` pin to the `B7` pin (I2C Data) of the STM32F103C8T6.
-
-- **microSD Card**:
-  - Connect the `CS` pin to the `PC13` pin of the STM32F103C8T6.
-  - Connect the `SCK` pin to the `A5` pin of the STM32F103C8T6.
-  - Connect the `MOSI` pin to the `A7` pin of the STM32F103C8T6.
-  - Connect the `MISO` pin to the `A6` pin of the STM32F103C8T6.
-  - Connect the `VCC` pin to the `5V` pin of the STM32F103C8T6.
-  - Connect the `GND` pin to the `GND` pin of the STM32F103C8T6.
-*/
