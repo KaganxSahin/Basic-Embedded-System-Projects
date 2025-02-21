@@ -11,6 +11,25 @@ USE LFN (Use Long Filename): Enabled with static working buffer on the BSS
 Max SS (Maximum Sector Size): 4096
 */
 
+// Wiring
+/*
+STM32 Microcontroller:
+
+A4 (CS) → Chip Select pin of the SD card module
+A5 (SCK) → Serial Clock pin of the SD card module
+A6 (MISO) → Master In Slave Out pin of the SD card module
+A7 (MOSI) → Master Out Slave In pin of the SD card module
+
+SD Card Module:
+
+CS (Chip Select) → A4 on the STM32
+SCK (Serial Clock) → A5 on the STM32
+MISO (Master In Slave Out) → A6 on the STM32
+MOSI (Master Out Slave In) → A7 on the STM32
+VCC → 5V on the breadboard
+GND → GND on the breadboard
+*/
+
 //Library 1
 //Inside Core/Inc Folder: fatfs_sd.h
 
@@ -678,22 +697,3 @@ f_getfree("", &fre_clust, &pfs);
 totalSpace = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
 freeSpace = (uint32_t)(fre_clust * pfs->csize * 0.5);
 /* USER CODE END 2 */
-
-// Wiring
-/*
-STM32 Microcontroller:
-
-A4 (CS) → Chip Select pin of the SD card module
-A5 (SCK) → Serial Clock pin of the SD card module
-A6 (MISO) → Master In Slave Out pin of the SD card module
-A7 (MOSI) → Master Out Slave In pin of the SD card module
-
-SD Card Module:
-
-CS (Chip Select) → A4 on the STM32
-SCK (Serial Clock) → A5 on the STM32
-MISO (Master In Slave Out) → A6 on the STM32
-MOSI (Master Out Slave In) → A7 on the STM32
-VCC → 5V on the breadboard
-GND → GND on the breadboard
-*/
