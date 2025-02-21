@@ -20,6 +20,25 @@ Prescaler set to 15
 Counter Period 9999
 */
 
+//Wiring
+/*
+- **STM32 Microcontroller**:
+  - The `A1` pin is connected to the middle terminal (analog output) of the potentiometer.
+  - The `5V` pin is connected to the power input of the servo motor.
+  - The `G` (GND) pin is connected to the ground terminals of both the potentiometer and the servo motor.
+
+- **Potentiometer**:
+  - One terminal is connected to `GND`, and the other terminal is connected to `3.3V`.
+  - The middle terminal is connected to the `A1` pin of the STM32.
+
+- **SG90 Servo Motor**:
+  - The red wire (`VCC`) is connected to the `5V` pin of the STM32.
+  - The brown wire (`GND`) is connected to the `GND` pin of the STM32.
+  - The orange wire (`PWM` signal) is connected to a PWM output pin of the STM32.
+
+These connections allow the potentiometer to control the angle of the servo motor.
+*/
+
 //Additional code on top of STM32CubeIDE generated code
  /* USER CODE BEGIN 2 */
   HAL_ADC_Start(&hadc1);
@@ -42,22 +61,3 @@ Counter Period 9999
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-
-//Wiring
-/*
-- **STM32 Microcontroller**:
-  - The `A1` pin is connected to the middle terminal (analog output) of the potentiometer.
-  - The `5V` pin is connected to the power input of the servo motor.
-  - The `G` (GND) pin is connected to the ground terminals of both the potentiometer and the servo motor.
-
-- **Potentiometer**:
-  - One terminal is connected to `GND`, and the other terminal is connected to `3.3V`.
-  - The middle terminal is connected to the `A1` pin of the STM32.
-
-- **SG90 Servo Motor**:
-  - The red wire (`VCC`) is connected to the `5V` pin of the STM32.
-  - The brown wire (`GND`) is connected to the `GND` pin of the STM32.
-  - The orange wire (`PWM` signal) is connected to a PWM output pin of the STM32.
-
-These connections allow the potentiometer to control the angle of the servo motor.
-*/
