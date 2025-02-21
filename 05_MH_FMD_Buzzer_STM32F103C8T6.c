@@ -19,12 +19,6 @@ Configuration → Parameter Settings →
 Set the Clock source as internal clock, which is at 60 MHz.
 */
 
-//Additional code on top of STM32CubeIDE generated code
- /* USER CODE BEGIN 2 */
-  __HAL_TIM_SET_PRESCALER(&htim1, 24);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  /* USER CODE END 2 */
-
 //Wiring
 /*
 - **STM32 Microcontroller**:
@@ -39,3 +33,9 @@ Set the Clock source as internal clock, which is at 60 MHz.
 
 These connections allow the STM32 to control the buzzer by generating PWM signals.
 */
+
+//Additional code on top of STM32CubeIDE generated code
+ /* USER CODE BEGIN 2 */
+  __HAL_TIM_SET_PRESCALER(&htim1, 24);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  /* USER CODE END 2 */
