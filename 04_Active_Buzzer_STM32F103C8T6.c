@@ -8,18 +8,6 @@ Click GPIO → Configure GPIO_A → GPIO_PIN_1
 Mode set to Output
 */
 
-//Additional code on top of STM32CubeIDE generated code
- /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
-	  HAL_Delay(500);
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
-
 //Wiring
 /*
 - **STM32 Microcontroller**:
@@ -32,3 +20,15 @@ Mode set to Output
 
 These connections allow the STM32 to control the buzzer by toggling the GPIO pin.
 */
+
+//Additional code on top of STM32CubeIDE generated code
+ /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
+	  HAL_Delay(500);
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
