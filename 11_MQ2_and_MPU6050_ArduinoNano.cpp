@@ -76,5 +76,5 @@ void loop() {
   Serial.println(mq2Value);
 
   Serial.println("------------------------------");
-  delay(500);  // Delay for more stable data retrieval
+  delay(500); 
 }
